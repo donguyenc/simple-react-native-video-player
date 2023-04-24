@@ -122,8 +122,6 @@ class VideoPlayerView: UIView {
       DispatchQueue.main.async {
         if self?.onLoaded != nil {
           self?.onLoaded!(["durationInSeconds": asset.duration.seconds])
-          self?.addPeriodicTimeObserver()
-          print("Reached here")
         }
       }
       self?.setUpPlayerItem(with: asset)

@@ -9,10 +9,15 @@ Assume user can play only 1 video.
 No other features are supported. 
 
 ## Requirements
-React native. 
-yarn. 
+React native
+yarn
 
 
 ## Clone or download the repository to your local machine.
-yarn. 
-yarn run ios. 
+```bash
+yarn
+```
+
+```bash
+yarn run ios
+```

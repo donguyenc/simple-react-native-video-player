@@ -4,6 +4,66 @@
    <FileRef
       location = "group:videoplayer.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:videoplayer"
+      name = "videoplayer">
+      <FileRef
+         location = "group:AppDelegate.h">
+      </FileRef>
+      <FileRef
+         location = "group:SplashScreen.storyboard">
+      </FileRef>
+      <FileRef
+         location = "group:main.m">
+      </FileRef>
+      <Group
+         location = "group:Images.xcassets"
+         name = "Images.xcassets">
+         <Group
+            location = "group:SplashScreen.imageset"
+            name = "SplashScreen.imageset">
+            <FileRef
+               location = "group:splashscreen.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:SplashScreenBackground.imageset"
+            name = "SplashScreenBackground.imageset">
+            <FileRef
+               location = "group:background.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:AppIcon.appiconset"
+            name = "AppIcon.appiconset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Contents.json">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:AppDelegate.mm">
+      </FileRef>
+      <Group
+         location = "group:Supporting"
+         name = "Supporting">
+         <FileRef
+            location = "group:Expo.plist">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Info.plist">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>

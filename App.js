@@ -1,21 +1,40 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import {
+  Text,
+  StatusBar,
+  View,
+  StyleSheet
+} from 'react-native';
+import MyVideoPlayer from './components/VideoPlayer'
 
-export default function App() {
+const App = () => {
+  const videoURL =
+    'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
+  
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar barStyle="dark-content" backgroundColor={'#e4e5ea'} />
+      <Text style={styles.title}>Video Player</Text>
+      <MyVideoPlayer url={videoURL} />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#e4e5ea',
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: 50,
+    alignItems: "stretch",
   },
+  title: {
+    fontSize: 20,
+    color: '#000',
+    marginVertical: 25,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    textAlign: 'center'
+  }
 });
+
+export default App;
